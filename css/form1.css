@@ -1,0 +1,185 @@
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #1E8CDD;
+    /* background-repeat: no-repeat; */
+    width: 100%;
+}
+.contener{
+    width: 60%;
+    min-height: 300px;
+    margin: auto;
+    /* border: 1px solid #000; */
+    background-image: url(../image/back.png);
+    margin-top: 50px;
+}
+.home{
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    background-color: #71C4F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .icon{
+    width: 10%;
+    height: 60px;
+    /* float: left; */
+    color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+
+
+}
+.home .menu{
+    width: 60%;
+    height: 60px;
+    /* float: left; */
+    margin-left: 5%;
+    color: white;
+    padding-top: 15px;
+}
+.menu a{
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    
+}
+/* .home .search{
+    width: 10%;
+    height: 60px;
+    float: left;
+
+    padding-top: 15px;
+}
+.home .search i{
+    position: relative;
+    left: 30px;
+    background-color: white;
+} */
+.search
+{
+     width: 150px;
+     height: 40px;
+     border: 1px solid #000;
+     border-radius: 10px;
+     background-color: white;
+     align-items: center;
+     justify-content: center;
+     margin-right: 20px;
+}
+.search input
+{
+    width: 112px;
+    padding: 10px;
+      border: none;
+      outline: none;
+    
+}
+.search i{
+ margin-left: 5px;
+ padding-top: 3px;
+  font-size: 20px;
+}
+.box{
+    width: 100%;
+height: 300px;
+margin-top: 30px;
+    
+}
+.box .box1{
+    width: 40%;
+    height: 300px;
+    float: left;
+    padding-left: 5%;
+    color: white;
+}
+.box1 p{
+    font-size:xx-large;
+}
+.box a{
+    color: mediumblue;
+    text-decoration: none;
+}
+.box1 input{
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    color: black;
+    /* margin-top: 10px; */
+}
+.box1 input:hover{
+    background-color: blue;
+}
+.box .box2{
+    width: 45%;
+    height:300px;
+    float: left;
+    padding-left: 15%;
+    color: white; 
+}
+
+.box2 input{
+    border-radius: 10px;
+    width:90%;
+    height: 35px;
+    margin-top: 2px;
+    
+    /* padding-top:10px; */
+}
+.box2 input-button{
+    background-color: blue;
+}
+.box2 i{
+    background-color: black;
+    text-align: center;
+    line-height: 4opx;
+    position: relative;
+    right: 30px;
+}
+.box2 p{
+    font-size: small;
+    float: right;
+}
+.box2 #a input{
+    width: 80%;
+    /* float: left; */
+}
+.box2 #a i{
+    width: 20px;
+    line-height: 4opx;
+    position: relative;
+    left: 100px;
+    margin-top: 10px;
+    
+}
+.box2 #b input{
+    width: 80%;
+    /* float: right; */
+
+}
+.parent
+{
+    display: flex;
+}
+.box #b i{ 
+    width: 20px;
+    line-height: 4opx;
+    position: relative;
+    right: 30px;
+    margin-top: 10px;
+    
+}
+.box #button input{
+    background: blue;
+    color: white;
+}
+.box #button input:hover{
+    background-color: #71C4F6;
+}
+ 

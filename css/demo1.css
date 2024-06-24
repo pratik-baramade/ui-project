@@ -1,0 +1,32 @@
+.A{
+    background-color:skyblue;
+
+}
+.B{
+    background-color: aqua;
+}
+.C{
+    background-color:paleturquoise;
+}
+h1{
+    text-align: center;
+}
+#a{
+    background-color: cornflowerblue;
+}
+#b{
+    background-color: mediumspringgreen;
+}
+#c{
+    background-color: yellowgreen;
+}
+div{
+    border: 1px solid black;
+    background-color: aqua;
+}
+.d{background-color: brown;
+
+}
+.e{
+    background-color: chocolate;
+}

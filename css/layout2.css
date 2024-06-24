@@ -1,0 +1,90 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 60%;
+    min-height:100px;
+    margin: auto;
+    
+}
+.parrents{
+    
+    width: 100%;
+    height: 60px;
+}
+.parrents .heading{
+    width:49%;
+    height:60px;
+    background-color:#52524F ;
+    float: left;
+    border-radius: 15px;
+    
+}
+.heading h1{
+    color: white;
+    padding: 5px;
+}
+.parrents .menu{
+    width:50%;
+    height:60px;
+    padding: 15px;
+    float:right;
+    background-color:#52524F;
+    border-radius: 15px;
+}
+.parrents a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.slider
+{
+    width:100%;
+    height: 300px;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+.slider img{
+    width:100%;
+    height:100%;
+    border-radius: 15px;
+}
+.main-content{
+    width:100%;
+    height: 300px;
+    margin-top: 5px;
+}
+.main-content .sliderbar {
+    width:22%;
+    min-height:300px;
+    float: right;
+    padding: 10px;
+    background-color: #B7BBC2;
+    border-radius: 15px;
+}
+.main-content .content{
+    width: 75%;
+    float: left;
+    background-color: #DDDAD7;
+    border-radius: 15px;
+}
+.main-content .content p{
+    text-align: justify;
+    padding: 10px;
+}
+.footer{
+    background-color: #52524F;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: block;
+}

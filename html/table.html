@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Table Rows</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .hover-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .hover-table th,
+        .hover-table td {
+            border: 1px solid #ce7e7e;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .hover-table th {
+            background-color: #f2f2f2;
+        }
+
+        .hover-table tr:hover {
+            background-color: #aa6d6d;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="hover-table">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+            </tr>
+            <tr>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+            </tr>
+            <tr>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

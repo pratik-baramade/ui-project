@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 80%;
+            height: 500px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid red;
+            background-image: url(../image/tableback.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        table{
+            width: 60%;
+            height: 400px;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid #000;
+            
+        }
+        th,tr,td{
+            border: 1px solid #000;
+
+        }
+        th{
+            padding-top: 20px;
+        }
+        img{
+            width: 80%;
+            height: 60px;
+            background-color: aquamarine;
+        }
+        input{
+            width: 60px;
+            height: 25px;
+            border-radius: 10px;
+            margin-left: 5px;
+        }
+        input[type=submit]
+        {
+            background-color: red;
+            color: white;
+            cursor:progress;
+        }
+        input[type=button]{
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+
+        }
+        /* td:hover{
+            background-color: lightslategray;
+            color: white;
+        } */
+        .row-hover tr:hover
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table class="row-hover">
+            <tr>
+            <th>s-id</th>
+            <th>Student Name</th>
+            <th>Age</th>
+            <th>Photo</th>
+            <th>UPdate/Delate</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Pratik Baramade</td>
+                <td>23</td>
+                <td> <img src="../image/manicon.jpeg" alt=""></td>
+                <td><input type="button" value="UPdate"><input type="submit" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ram Kale</td>
+                <td>24</td>
+                <td> <img src="../image/manicon.jpeg" alt=""></td>
+                <td><input type="button" value="UPdate"><input type="submit" value="Delate"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kishor Singh</td>
+                <td>25</td>
+                <td> <img src="../image/manicon.jpeg" alt=""></td>
+                <td><input type="button" value="UPdate"><input type="submit" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>vishal Patil</td>
+                <td>23</td>
+                <td> <img src="../image/manicon.jpeg" alt=""></td>
+                <td><input type="button" value="UPdate"><input type="submit" value="Delete"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Pratik Aagrval</td>
+                <td>20</td>
+                <td> <img src="../image/manicon.jpeg" alt=""></td>
+                <td><input type="button" value="UPdate"><input type="submit" value="Delete"></td>
+            </tr>
+
+
+
+
+
+        </table>
+    </div>
+    
+</body>
+</html>
