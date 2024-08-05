@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 60%;
+            min-height: 10px;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 50px 120px 120px;
+            grid-template-columns: 80px 100px 100px;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
+        }
+        .box1{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: lightskyblue;
+        grid-column: 1/-1;
+
+        }
+        .box2{
+            display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: skyblue;
+        grid-row: 2/4;
+            
+        }
+        .box3{
+            display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: blue;
+        grid-column: 2/4;
+            
+        }
+        .box4{
+            display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: blueviolet;
+            
+        }
+        .box5{
+            display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: cornflowerblue;
+            
+        }
+        .box6{
+            display: flex;
+        justify-content:center;
+        align-items: center;
+        background-color: darkslateblue;
+        grid-column: 1/-1;
+            
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box1">Header</div>
+            <div class="box2">Slider</div>
+            <div class="box3">Content</div>
+            <div class="box4">Content1</div>
+            <div class="box5">Content3</div>
+            <div class="box6">Footer</div>
+        </div>
+        
+    </body>
+    </html>
+    
+</body>
+</html>

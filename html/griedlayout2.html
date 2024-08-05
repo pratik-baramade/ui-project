@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 80%;
+            min-height: 600px;
+            margin: auto;
+            margin-top: 30px;
+            display: grid;
+            border: 1px solid #000;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows:60px 100px 100px;
+            grid-template-columns: 100px 200px 200px 100px;
+            gap: 10px;
+        }
+       
+        .layout1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: palegreen;
+            grid-row-start: 1;
+            grid-row-end: 4;
+    
+        }
+        .layout2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: palegreen;
+            grid-column: 2/4;
+            /* grid-rows:2/-1; */
+        }
+        .layout3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+        }
+        .layout4{
+            display: flex;
+            justify-content: center;
+            background-color: yellow;
+            align-items: center;
+        }
+        .layout5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+        }
+        .layout6{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: palegreen;
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .layout7{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+        }
+        .layout8{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="layout1">Box1</div>
+        <div class="layout2">menu</div>
+        <div class="layout3">icon</div>
+        <div class="layout4">bo1</div>
+        <div class="layout5">box2</div>
+        <div class="layout6">box1</div>
+        <div class="layout7"></div>
+        <div class="layout8"></div>
+
+    </div>
+    
+</body>
+</html>

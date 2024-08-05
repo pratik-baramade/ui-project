@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: "Josefin Sans", sans-serif; */
+            font-family: "Work Sans", sans-serif;
+            
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contener {
+            width: 100%;
+            flex-direction: column;
+            min-height: 500px;
+            margin: auto;
+            margin-top: 50px;
+            border: 1px solid #000;
+        }
+
+        .main-header {
+            width: 100%;
+            height: 400px;
+            flex-direction: row;
+            background-image: url(../image/candyback1.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .header {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            padding: 10px;
+
+        }
+
+        .header .icon {
+            flex-basis: 50%;
+            padding-left: 50px;
+            color: white;
+        }
+
+        .header .menu {
+            flex-basis: 50%;
+            flex-direction: row;
+
+        }
+
+        .menu ul li {
+            list-style-type: none;
+            display: inline;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            padding-left: 50px;
+        }
+
+        .BOx {
+            width: 100%;
+            height: 400px;
+            /* padding-top: 10px; */
+            /* margin-top: 150px; */
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .BOx h1 {
+            
+            /* padding-left: 340px; */
+        }
+
+        .BOx h3 {
+            /* padding-left: 300px; */
+        }
+
+        .box {
+            width: 100%;
+            height: 300px;
+            display: flex;
+
+
+        }
+
+        .box .box1 {
+            flex-basis: 60%;
+            height: 300px;
+            /* padding-left: 60px;
+            padding-top: 40px;*/
+            padding: 100px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(252, 201, 218);
+        }
+
+        .box1 p {
+            text-align: justify;
+
+
+        }
+
+        .box1 #h2 {
+            color: darkblue;
+        }
+
+        .box .box2 {
+            flex-basis: 40%;
+            height: 300px;
+            background-image: url(../image/donet-3d-model-blend.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .center {
+            width: 100%;
+            height: 300px;
+            padding-top: 100px;
+        }
+
+        .center h2 {
+            text-align: center;
+        }
+
+        .center p {
+            text-align: justify;
+            text-align: center;
+            font-size: 15px;
+            padding-top: 20px;
+        }
+
+        .center input[type=button] {
+            width: 10%;
+            height: 30px;
+            background-color: darkblue;
+            color: white;
+            margin-left: 45%;
+            margin-top: 20px;
+        }
+
+        .div {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .div .div1 {
+            flex-basis: 50%;
+            background-image: url(../image/cute.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .div .div2 {
+            flex-basis: 50%;
+            flex-basis: 50%;
+            background-image: url(../image/glass.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .middle {
+            width: 100%;
+            height: 400px;
+            margin-top: 50px;
+
+        }
+
+        .middle h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .middlea {
+            width: 80%;
+            height: 150px;
+            flex-direction: row;
+            margin: auto;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .middlea .middle1 {
+            flex-basis: 33%;
+            width: 33%;
+            height: 150;
+            background-image: url(../image/badgetsa.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .middlea .middle2 {
+            flex-basis: 33%;
+            width: 33%;
+            height: 150px;
+            background-image: url(../image/girleat.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .middlea .middle3 {
+            flex-basis: 33%;
+            width: 33%;
+            height: 150px;
+            background-image: url(../image/glass.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .middleb {
+            width: 80%;
+            height: 150px;
+            flex-direction: row;
+            margin: auto;
+            display: flex;
+        }
+
+        .middleb .middle4 {
+            flex-basis: 33%;
+            width: 33%;
+            height: 150;
+            background-image: url(../image/donet-3d-model-blend.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .middleb .middle5 {
+            flex-basis: 33%;
+            width: 33%;
+            height: 150;
+            background-image: url(../image/familly.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .middleb .middle6 {
+            flex-basis: 33%;
+            width: 33%;
+            height: 150;
+            background-image: url(../image/cute.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .middletext {
+            width: 100%;
+            height: 150px;
+            flex-direction: column;
+            padding-top: 50px;
+            /* padding-left: 500px; */
+            background-color: darkblue;
+            
+
+        }
+        .middletext p{
+            color: white;
+            text-align: center;
+            /* margin-left: 500px; */
+        }
+        /* .middletext input[type=text]{
+            margin-left: 520px;
+
+        } */
+
+        .middletext input[type=text] {
+            width: 20%;
+            height: 30px;
+            margin-left: 650px;
+
+        }
+
+        .middletext input[type=button] {
+            width: 10%;
+            height: 30px;
+            background-color: #f2c4d1;
+        }
+
+        .middletext p {
+            /* padding: 10px 2px; */
+            font-size: 15vm;
+        }
+        .lastbox {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f2c6d3;
+        }
+
+        .lastbox .lastbox1 {
+            flex-basis: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lastbox .lastbox2 {
+            flex-basis: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lastbox .lastbox3 {
+            flex-basis: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            background-color: darkblue;
+            font-size: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .contener{
+                width: 100%;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .icon h2{
+                font-size: 4vh;
+            }
+
+            .menu ul {
+                flex-direction: column;
+                /* gap: 50px; */
+                padding-top: 5px;
+            }
+
+            .menu ul li {
+                display: block;
+                padding-top: 5px;
+            }
+
+            .BOx h1{
+                font-size: 5vw;
+            }
+            .BOx h3{
+                font-size: 3vw;
+            }
+
+            .box {
+                width: 100%;
+                height: 600px;
+                flex-direction: column;
+            }
+
+            .box1{
+                width: 100%;
+                height: 300px;
+                margin-top: 10px;
+            }
+            .box1 p{
+                font-size: 2vw;
+            }
+            .box2 {
+                width: 100%;
+                height: 300px;
+                margin-top: 10px;
+                
+            }
+            .box2 h2{
+                font-size: 5vw;
+            }
+
+            .center input[type=button] {
+                width: 100%;
+                max-width: 200px;
+            }
+            .middle{
+                width: 100%;
+                height: 1850px;
+            }
+
+            .middlea{
+                width: 100%;
+                height: 900px;
+                flex-direction: column;
+            }
+            .middle h2{
+                font-size: 5vw;
+            }
+            .middlea .middle1{
+                width: 80%;
+                height: 300px;
+                margin: auto;
+            }
+            .middlea .middle2{
+                width: 80%;
+                height: 300px;
+                margin: auto;
+            }
+            .middlea .middle3{
+                width: 80%;
+                height: 300px;
+                margin: auto;
+            }
+            .middleb{
+                width: 100%;
+                height: 900px;
+                flex-direction: column;
+                
+            }
+            .middleb .middle4{
+                width: 80%;
+                height: 300px;
+                margin: auto;
+            }
+            .middleb .middle5{
+                width: 80%;
+                height: 300%;
+                margin: auto;
+            }
+            .middleb .middle6{
+                width: 80%;
+                height: 300px;
+                margin: auto;
+            }
+            .middletext{
+                width: 100%;
+
+            }
+            .middletext p{
+                font-size: 2rem;
+            }
+            .center{
+                width: 100%;
+
+            }
+            .center h2{
+                font-size: 5vw;
+
+            }
+            .center p{
+                font-size: 2vw;
+                
+            }
+            .center input[type=button]{
+                width: 20%;
+                padding-right: 10px;
+                
+            }
+            .div{
+                flex-direction: column;
+                width: 100%;
+                height: 600px;
+            }
+            .div .div1{
+                width: 100%;
+                height: 300px;
+            }
+            .div .div1{
+                width: 100%;
+                height: 300px;
+            }
+            .middletext{
+                width: 100%;
+                height: 150px;
+            }
+            .middletext p{
+                font-size: 3vw;
+                text-align: center;
+                /* margin-right: 500px; */
+                flex-direction: row;
+            }
+            .middletext input[type=text]{
+                margin-left: 100px;
+                width: 35%;
+                height: 20px;
+                
+                
+            }
+            .middletext input[type=button]{
+                width: 20%;
+                height: 20px;
+                
+            }
+            .lastbox{
+                width: 100%;
+                height: 300px;
+                flex-direction: column;
+            }
+
+            .lastbox .lastbox1{
+                width: 100%;
+                height: 100px;
+                margin-right: 150px;
+            }
+            .lastbox p{
+                font-size: 1vm;
+                text-align: justify;
+                padding-top: 20px;
+                
+
+            }
+            .lastbox .lastbox2{
+                width: 100%;
+                height: 100px;
+                margin-right: 150px;
+            }
+            .lastbox .lastbox3{
+                width: 100%;
+                height: 100px;
+                margin-right: 150px;
+            }
+            .footer{
+                width: 100%;
+                font-size: 5vw;
+            }
+            
+
+            .middlea div, .middleb div {
+                /* width: 100%; */
+                /* height: 100px; */
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="contener">
+        <div class="main-header">
+            <div class="header">
+                <div class="icon">
+                    <h1>DD</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Information</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="BOx">
+                <h3>Welcome To The Sweet Word of</h3>
+                <h1>Dilly Donuts</h1>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <h2>From our Kitchen.</h2>
+                <br>
+                <h2 id="h2">to your tummy</h2>
+                <br>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    minima suscipit omnis adipisci sunt.
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit doloremque, qui officia nemo magnam porro est quod
+                    voluptatum, labore quisquam natus perferendis quam volu,
+                    dicta facilis dolores aspernatur ipsam.
+                </p>
+
+            </div>
+            <div class="box2">
+
+            </div>
+        </div>
+        <div class="center">
+            <h2>Only the best ingredients.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur .<br>
+                Nesciunt fugiat expedita.</p>
+            <input type="button" value="Click Here">
+        </div>
+        <div class="div">
+            <div class="div">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+        </div>
+        <div class="middle">
+            <h2>Follow us on the gram!<a href="#">@dillydonuts</a></h2>
+            <div class="middlea">
+                <div class="middle1"></div>
+                <div class="middle2"></div>
+                <div class="middle3"></div>
+            </div>
+            <div class="middleb">
+                <div class="middle4"></div>
+                <div class="middle5"></div>
+                <div class="middle6"></div>
+            </div>
+        </div>
+        <div class="middletext">
+            <p>Lorem ipsum dolor sit amet.</p>
+           <p id="p"> Info<br></p>
+            <input type="text" name="text">
+            <input type="button" name="button" value="Submit">
+
+
+        </div>
+        <div class="lastbox">
+          
+            <div class="lastbox1">
+              <p> Lorem ipsum dolor amet<br> consectetur adipisicing <br>elit.exercitationem.</p>
+            </div>
+            <div class="lastbox2"> 
+                <p> Lorem ipsum dolor<br>  amet consectetur <br>adipisicing elit.<br>  exercitationem.</p>
+            </div>
+            <div class="lastbox3">
+                <p> Lorem ipsum<br> dolor amet<br>
+                     consectetur <br>adipisicing <br>
+                      &nbsp;lit. </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>This wbsite created by &copy;Baramade</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

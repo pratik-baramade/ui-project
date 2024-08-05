@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 80%;
+            min-height: 100px;
+            margin: auto;
+            /* border: 1px solid #000; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 50px 300px 400px 50px;
+            grid-auto-rows: 100px;
+            gap: 10px;
+            
+        
+
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: peru;
+            grid-column: 1/-1;
+            
+        }
+        .box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color:crimson;
+            grid-column: 1/-1;
+        }
+        .box3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: brown;
+            grid-column: 1/-1;
+        }
+        .box4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color:chartreuse;
+            grid-column: 1/-3;
+        }
+        .box5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: peru;
+            grid-column: 2/-1;
+        }
+        .box6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: darkred;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            Box1
+        </div>
+        <div class="box2">
+            Box2
+        </div>
+        <div class="box3">
+            Box3
+        </div>
+        <div class="box4">
+            Box4
+        </div>
+        <div class="box5">
+            Box5
+        </div>
+        <div class="box6">
+            Box6
+        </div>
+    </div>
+
+</body>
+
+</html>

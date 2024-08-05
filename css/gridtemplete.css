@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Contener {
+    width: 100%;
+    min-height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 60px 60px 200px 300px 60px;
+    grid-gap: 10px;
+    grid-template-areas: "Company Company Company Company"
+        "Menu Menu Menu Menu"
+        "slider Box1 Box2 Box3"
+        "slider content content content"
+        "footer footer footer footer";
+
+}
+
+.Company {
+    background-color: brown;
+    grid-area: Company;
+}
+
+.Menu {
+    background-color: #b91717;
+    grid-area: Menu;
+}
+
+.Menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    
+
+}
+
+.Menu ul li a {
+    text-decoration: none;
+
+}
+
+.slider {
+    background-color: #481a8b;
+    grid-area: slider;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+.Box1 {
+    background-color: #4ab928;
+    grid-area: Box1;
+}
+
+.Box1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.Box2 {
+    background-color: #14768e;
+    grid-area: Box2;
+
+}
+
+.Box2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.Box3 {
+    background-color: #9e8922;
+    grid-area: Box3;
+}
+
+.Box3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    background-color: #b1126c;
+    grid-area: content;
+    padding: 10px;
+}
+.content p{
+    text-align: justify;
+}
+
+.footer {
+    background-color: #26484b;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width:768px){
+    .Contener{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+         grid-template-rows:auto;
+     grid-gap: 10px;
+        grid-template-areas: "Company"
+        "Menu "
+        "slider"
+        "Box1"
+         "Box2"
+          "Box3"
+        "content"
+        "footer";
+    }
+    .Company{
+        width: 100%;
+
+    }

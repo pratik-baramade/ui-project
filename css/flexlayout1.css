@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.contaner{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-height: 500px;
+    margin: auto;
+    border: 1px solid #000;
+}
+.main-header-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* gap: 2%; */
+    /* justify-content: end; */
+    /* flex-wrap: wrap; */
+}
+.main-header-div .logo{
+    flex-basis:50%;
+    background-color: crimson;
+    color: white;
+    /* border: 1px solid #000; */
+}
+.main-header-div .menu{
+    display: inline-block;
+    flex-direction: row;
+    background-color: #1fc9e4;
+    flex-basis: 50%;
+    pos
+    padding: 15px;
+}
+.menu ul li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+    
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    /* padding-left: 30px; */
+
+}
+.slider{
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+    height: 800px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    /* position: sticky; */
+
+
+}
+.slide-bar{
+    flex-basis: 35%;
+    width: 100%;
+    /* border: 1px solid #000; */
+    overflow: scroll;
+    background-image: url(../image/bulletslider.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    color:white;
+    /* text-align: justify; */
+    /* background-attachment: fixed; */
+    /* top: 0; */
+
+}
+.slide-bar p{
+    padding: 10px;
+    text-align: justify;
+    
+}
+.content{
+    flex-basis: 65%;
+    width: 100%;
+    flex-direction: column;
+
+}
+.content .info{
+    flex-basis: 50%;
+    width: 100%;
+    flex-direction: column;
+}
+.info h2{
+    padding: 15px;
+}
+.info p{
+    padding: 10px;
+    text-align: justify;
+}
+.content .img{
+    flex-basis: 34%;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+}
+.box1{
+    flex-basis: 50%;
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+    position: relative;
+    /* flex-direction: row; */
+    border: 1px solid #000;
+ 
+}
+.box1 a{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+.box1 h3{
+    position: absolute;
+    color: azure;
+    bottom: 5%;   
+}
+.box1 img{
+    flex-basis: 33%;
+    width: 98%;
+    height: 100%;
+    
+}
+.box2{
+    flex-basis: 33%;
+    width: 100%;
+    height: 200px;
+    gap: 10px;
+    position: relative;
+    /* flex-direction: row; */
+    border: 1px solid #000;
+ 
+}
+.box2 a{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+.box2 h3{
+    position: absolute;
+    color: azure;
+    bottom: 5%;   
+}
+.box2 img{
+    flex-basis: 33%;
+    width: 98%;
+    height: 100%;
+    
+}
+/* .box2{
+    flex-basis: 33%;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    border: 1px solid #000;
+ 
+}
+.box2 a{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+.box2 h3{
+    position: absolute;
+    color: azure;
+    bottom: 5%;   
+}
+.box2 img{
+    width: 100%;
+    background-size: 100% 100%;
+}
+.box3{
+    flex-basis: 33%;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    flex-direction: row;
+    border: 1px solid #000;
+ 
+}
+.box3 a{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+.box3 h3{
+    position: absolute;
+    color: azure;
+    bottom: 5%;   
+}
+.box1 img{
+    width: 100%;
+    background-size: 100% 100%;
+} */
+
+
+ 
+
+.footer{
+  text-align: center;
+  background-color: bisque;
+}
